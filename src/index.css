@@ -9,10 +9,54 @@ html {
 }
 body {
   font-size: 2.4rem;
+  font-family: "Luckiest Guy", sans-serif;
+  font-weight: 400;
+
+  background-image: url(../imgs/LotomatImg.png);
+  background-size: cover;
 }
 .app {
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto 1fr;
+}
+
+.title {
+  font-size: 5rem;
+  text-align: center;
+  padding: 2rem;
+  letter-spacing: 1.1rem;
+  text-shadow: 1px 1px 0px rgba(175, 78, 75, 0.466),
+    /* Shadow to the right and down (x, y offset) */ -1px -1px 0px
+      rgba(175, 78, 75, 0.466),
+    /* Shadow to the left and up */ 1px -1px 0px rgba(175, 78, 75, 0.466),
+    /* Shadow to the right and up */ -1px 1px 0px rgba(175, 78, 75, 0.466); /* Shadow to the left and down */
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 40rem auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.numbers {
+  width: 90rem;
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.973);
+  padding: 5rem 10rem;
+  border-radius: 6px;
+}
+.button {
+  padding: 2rem;
+  width: 12rem;
+  letter-spacing: 0.2rem;
+  color: white;
+  border-radius: 4px;
+  background-color: rgb(12, 189, 12);
+  font-family: "Luckiest Guy";
+  transform: translateY(-14rem);
 }
